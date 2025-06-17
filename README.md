@@ -138,3 +138,28 @@ This section outlines the core entities and their relationships in the Airbnb Cl
 ---
 
 > This design enables efficient tracking of users, property listings, booking schedules, user feedback, and payment records.
+
+
+## Feature Breakdown
+
+### ✨ Main Features
+This Airbnb Clone project offers a robust set of core features to simulate the functionalities of a real-world property rental platform:
+
+### 👥 User Management
+Users can sign up, log in, and manage their profiles. The system supports different roles, such as hosts (property owners) and guests (travelers), ensuring tailored experiences for each user type.
+
+### 🏠 Property Management
+Hosts can list properties with detailed descriptions, pricing, availability, and images. This feature allows property owners to manage and update their listings efficiently.
+
+### 📆 Booking System
+Guests can view property availability and make reservations for specific dates. The system ensures that bookings do not overlap and provides confirmation to both hosts and guests.
+
+### 💬 Reviews and Ratings
+Users can leave reviews and rate properties after completing their stays. This feedback mechanism builds trust within the platform and helps guests make informed decisions.
+
+### 💳 Payment Integration
+A secure payment module handles booking transactions. It processes payments, tracks payment statuses, and generates receipts to ensure transparency and accountability.
+
+### 🔎 Property Search and Filters
+Guests can search for properties using keywords, location, and filters like price range or amenities. This feature improves the user experience by helping them find suitable options quickly.
+
