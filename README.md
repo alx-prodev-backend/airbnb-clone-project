@@ -163,3 +163,35 @@ A secure payment module handles booking transactions. It processes payments, tra
 ### 🔎 Property Search and Filters
 Guests can search for properties using keywords, location, and filters like price range or amenities. This feature improves the user experience by helping them find suitable options quickly.
 
+## 🔐 API Security
+Ensuring robust API security is critical to maintaining user trust and protecting sensitive data. Below are the key security measures implemented in the project:
+
+### 🔑 Authentication
+The project uses token-based authentication (e.g., JWT or OAuth2) to ensure that only registered users can access protected endpoints. This prevents unauthorized access and keeps user sessions secure.
+
+Why it's important:
+Authentication protects user accounts and ensures that actions (like booking or listing properties) are only performed by verified users.
+
+### ✅ Authorization
+Role-based access control (RBAC) is enforced to distinguish permissions between hosts, guests, and admins. Only authorized users can perform specific operations such as modifying a property or processing a booking.
+
+Why it's important:
+Authorization ensures that users can only access resources and perform actions they are allowed to, reducing the risk of misuse and data breaches.
+
+### 🚫 Rate Limiting
+API endpoints are protected with rate limiting to prevent abuse through excessive requests, such as denial-of-service (DoS) attacks or brute-force login attempts.
+
+Why it's important:
+Rate limiting helps maintain service availability and performance by blocking malicious or excessive traffic.
+
+### 🔒 Data Encryption
+Sensitive data, including passwords and payment information, is encrypted both at rest and in transit using HTTPS and strong hashing algorithms (e.g., bcrypt).
+
+Why it's important:
+Encryption safeguards confidential information from being intercepted or accessed by unauthorized parties.
+
+### 🛡️ Input Validation & Sanitization
+All user inputs are validated and sanitized to prevent common web vulnerabilities such as SQL injection and cross-site scripting (XSS).
+
+Why it's important:
+Validating inputs protects the application from malicious data that could compromise the database or manipulate the front end.
