@@ -86,3 +86,55 @@ Here are the key technologies used in this project, along with their roles:
 ---
 
 > This tech stack allows us to build a scalable, efficient, and user-friendly Airbnb Clone application with modern web technologies.
+
+## 🗂️ Database Design
+
+This section outlines the core entities and their relationships in the Airbnb Clone project:
+
+### 🧑 Users
+- **id**: Unique identifier for the user
+- **name**: Full name of the user
+- **email**: Email address (used for login)
+- **password_hash**: Hashed password for security
+- **role**: Indicates if the user is a host or guest
+
+### 🏡 Properties
+- **id**: Unique identifier for the property
+- **owner_id**: Foreign key linking to the User who owns the property
+- **title**: Short descriptive title of the property
+- **description**: Detailed property information
+- **location**: Physical address or coordinates
+
+### 📅 Bookings
+- **id**: Unique identifier for the booking
+- **user_id**: Foreign key linking to the User who made the booking
+- **property_id**: Foreign key linking to the booked Property
+- **check_in**: Date of arrival
+- **check_out**: Date of departure
+
+### ⭐ Reviews
+- **id**: Unique identifier for the review
+- **user_id**: Foreign key linking to the User who submitted the review
+- **property_id**: Foreign key linking to the reviewed Property
+- **rating**: Numeric score (e.g., 1–5 stars)
+- **comment**: Textual feedback from the user
+
+### 💳 Payments
+- **id**: Unique identifier for the payment
+- **booking_id**: Foreign key linking to the related Booking
+- **amount**: Total payment amount
+- **payment_status**: Indicates if payment is completed or pending
+- **payment_date**: Date of the transaction
+
+### 🔗 Entity Relationships
+- A **User** can be both a **host** (owns properties) and a **guest** (books properties).
+- A **User** can have many **Properties**.
+- A **Property** can have many **Bookings**.
+- A **Booking** is associated with one **User** and one **Property**.
+- A **Property** can have many **Reviews**.
+- A **Review** is linked to one **User** and one **Property**.
+- A **Booking** can have one **Payment**.
+
+---
+
+> This design enables efficient tracking of users, property listings, booking schedules, user feedback, and payment records.
