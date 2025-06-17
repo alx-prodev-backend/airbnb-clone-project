@@ -62,3 +62,27 @@
 ---
 
 > This document provides a comprehensive overview of team member roles for the Airbnb Clone Project. Each role is critical for delivering a functional, user-friendly, and stable application.
+
+## 🧰 Technology Stack
+
+Here are the key technologies used in this project, along with their roles:
+
+- **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design. It is used to build the server-side logic and RESTful APIs for the application.
+
+- **PostgreSQL**: A powerful, open-source object-relational database system. It is used as the primary database to store and manage structured data for the application.
+
+- **GraphQL**: A query language for APIs and a runtime for executing those queries. It provides a flexible and efficient approach to accessing and manipulating data from the frontend.
+
+- **HTML/CSS/JavaScript**: Core frontend technologies used to build the user interface of the web application.
+
+- **Docker**: A containerization platform used to package the application and its dependencies for consistent and scalable deployment across environments.
+
+- **Nginx**: A web server used to serve static files and act as a reverse proxy for the Django application, improving performance and scalability.
+
+- **Gunicorn**: A Python WSGI HTTP Server for UNIX. It is used to serve the Django application in production.
+
+- **Git & GitHub**: Version control system and platform for collaboration and source code management.
+
+---
+
+> This tech stack allows us to build a scalable, efficient, and user-friendly Airbnb Clone application with modern web technologies.
